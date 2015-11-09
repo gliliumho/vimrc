@@ -1,2 +1,4 @@
 # vimrc
-Personal .vimrc and .vim configurations
+
+A clone of my .vimrc and plugin 
+
