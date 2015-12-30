@@ -9,10 +9,12 @@ set ignorecase					"ignore case insensitive search
 set wildmenu					"visual autocomplete for command menu
 set showmatch					"highlight matching [{()}]
 set incsearch					"search as characters are entered
+set number						"Display line numbers
 "set cursorline					"highlight current line
 map <Down> gj
 map <Up> gk
 
+set clipboard=unnamed			"allow copy/paste from OS clipboard
 set mouse=a						"allow use of mouse in all modes
 set backspace=indent,eol,start	"backspace over autoindent, linebreaks & start of insert
 
