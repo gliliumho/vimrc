@@ -60,7 +60,7 @@ fi
 green="\[\033[01;32m\]"
 blue="\[\033[01;34m\]"
 purple="\[\033[0;35m\]"
-reset="\[\033[0m\]"
+reset="\[\033[00m\]"
 
 # Enable tab completion
 source ~/.git-completion.bash
@@ -74,8 +74,8 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 
 # Uncomment the 3rd line in if condition to show "gliliumho-Mint"
 if [ "$color_prompt" = yes ]; then
-#    PS1='${debian_chroot:+($debian_chroot)}$green\u@\h\[\033[00m\]:$blue\w$reset\$ '
-    PS1="$green\u$purple\$(__git_ps1)$blue \w $ $reset"
+    PS1="${debian_chroot:+($debian_chroot)}$green\u@\h$reset:$blue\w$reset\$ "
+#    PS1="$green\u$purple\$(__git_ps1)$blue \w $ $reset"
 #    PS1="$green\u@\h$blue\$(__git_ps1)$purple \W $ $reset"
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '

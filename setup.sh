@@ -1,6 +1,7 @@
 #!/bin/bash
 #This script is used to make symbolic links in home folder
-
+#Run this in your home dir
+cd $HOME
 REPO_PATH=$(dirname $0)
 
 cp -v $HOME/.bashrc{,.bak}
