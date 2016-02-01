@@ -1,10 +1,14 @@
 #!/bin/bash
 #This script is used to make symbolic links in home folder
+#Run this in your home dir
+cd $HOME
+REPO_PATH=$(dirname $0)
 
-REPO_DIR=$(pwd)
+cp -v $HOME/.bashrc{,.bak}
+cp -v $HOME/.vimrc{,.bak}
+cp -Rv $HOME/.vim{,.bak}
 
-ln -sv $REPO_DIR/.git-* ~/
-ln -sv $REPO_DIR/.vim* ~/
-ln -sv $REPO_DIR/.bash* ~/
-
+ln -svf $REPO_PATH/.git-* $HOME/
+ln -svf $REPO_PATH/.vim* $HOME/
+ln -svf $REPO_PATH/.bash* $HOME/
 
